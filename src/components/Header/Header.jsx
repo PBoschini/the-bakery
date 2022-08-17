@@ -1,17 +1,18 @@
+import Navbar from '../Nav/Navbar';
+
 const Header = () => {
     return (
         <header className="contenedor-header">
+
+            <h2>
+                <span class="material-symbols-outlined">bakery_dining</span>
+                The Bakery 
+                <span class="material-symbols-outlined">bakery_dining</span>
             
-            <h2>The Bakery</h2>
-            
-            <nav>
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </nav>
+            </h2>
+
+            <Navbar />
+
         </header>
     );
 };

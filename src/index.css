@@ -1,5 +1,7 @@
 .contenedor-header {
-    background-color: lightblue 
+    background-color: lightblue;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+     
 }
 
 .contenedor-header h2 {
@@ -34,6 +36,12 @@
     color: black;
 }
 
+.contenedor-header span {
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    margin: 10px;
+}
 
 
 
