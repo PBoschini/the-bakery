@@ -1,13 +1,39 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.contenedor-header {
+    background-color: lightblue 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.contenedor-header h2 {
+    font-size: 50px;
+    font-family: 'Advent Pro', sans-serif;
+    display: flex; 
+    justify-content: center;
+    padding-top: 20px;
 }
+
+.contenedor-header ul {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.contenedor-header li {
+    display: inline;
+    margin: 15px;
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: bold;
+}
+
+.contenedor-header a {
+    text-decoration: none;
+    color: lightcoral;
+    font-weight: bold;
+}
+
+.contenedor-header a:hover {
+    color: black;
+}
+
+
+
+
