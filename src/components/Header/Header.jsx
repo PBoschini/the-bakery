@@ -5,9 +5,9 @@ const Header = () => {
         <header className="contenedor-header">
 
             <h2>
-                <span class="material-symbols-outlined">bakery_dining</span>
+                <span className="material-symbols-outlined">bakery_dining</span>
                 The Bakery 
-                <span class="material-symbols-outlined">bakery_dining</span>
+                <span className="material-symbols-outlined">bakery_dining</span>
             
             </h2>
 

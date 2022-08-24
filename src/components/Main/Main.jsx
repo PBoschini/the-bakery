@@ -1,12 +1,15 @@
+
 const Main = () => {
     return (
-        <main>
+        <main className="contenedor-main">
             <section>
-                <h3>MAIN</h3>
+                
             </section>
         </main>
     );
 };
 
 
+
 export default Main;
+
