@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import {productos} from "../../mock/productos";
-import ItemList from '../itemList/itemList';
+import Item from '../item/item';
 
 
 
-const ItemListContainer = ({}) => {
+const ItemList = ({}) => {
    
     const [items, setItems] = useState([]);
 
@@ -28,13 +28,14 @@ const ItemListContainer = ({}) => {
         });
 }, []);
 
-
 return (
-    <div>
-     <ItemList items={items}/>
+    <div className='itemList'>        
+       <Item items={items} key={items.id}/>
     </div>
 )
 
 };
 
-export default ItemListContainer;
+
+
+export default ItemList;

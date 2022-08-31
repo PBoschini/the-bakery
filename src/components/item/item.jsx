@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import {productos} from "../../mock/productos";
-import ItemList from '../itemList/itemList';
 
 
 
-const ItemListContainer = ({}) => {
+const Item = ({}) => {
    
     const [items, setItems] = useState([]);
 
@@ -28,13 +27,25 @@ const ItemListContainer = ({}) => {
         });
 }, []);
 
-
 return (
-    <div>
-     <ItemList items={items}/>
+    <div>        
+        {items.map((item) => {
+            return (
+                <div className='item'>
+                    <img src={item.img} alt="" />
+                    <p>{item.title}</p>
+                    <h2>{item.descripcion}</h2>
+                    <h5>${item.price}</h5>
+                    <h3>Stock: {item.stock}</h3>
+                    <button>Añadir</button>
+                </div>
+            )
+        })}
     </div>
 )
 
 };
 
-export default ItemListContainer;
+
+
+export default Item;

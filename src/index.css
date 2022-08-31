@@ -58,14 +58,60 @@
     font-size: 40px;
 }
 
-.contenedor-main {
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.contenedor-main {    
+    font-size: 20px;    
     font-family: 'Advent Pro', sans-serif;
     font-weight: bold;
+    display: flex;
+    justify-content: center;    
 }
+
+.contenedor-main img {
+    max-height: 150px;
+    max-width: 200px;
+    padding-top: 20px;    
+}
+
+.itemList {    
+    padding: 20px;
+    text-align: center;        
+}
+
+.item {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    max-width: 300px;
+    border-radius: 20px;
+    margin: 10px;
+    font-size: 25px;  
+}
+
+.item h3 {
+    font-size: 15px;
+}
+
+.item h5 {
+    font-size: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;   
+}
+
+.item h2 {
+    font-size: 20px;    
+}
+
+
+.item button {
+    background-color: lightcoral;
+    border-color: lightcoral;
+    
+    
+}
+
+.item button:hover {
+    background-color: lightblue;
+}
+
+
+
 
 .contenedor-footer {
     background-color: lightblue;
@@ -75,17 +121,10 @@
     justify-content: center;
     font-family: 'Advent Pro', sans-serif;
     font-weight: bold;
-
-}
-
-.titulo-bienvenidos {
-    font-family: 'Advent Pro', sans-serif;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
     
 }
+
+
 
 .contador {
     font-family: 'Advent Pro', sans-serif;

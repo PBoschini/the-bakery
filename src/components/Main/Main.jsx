@@ -1,10 +1,11 @@
+import ItemListContainer from "../ItemListContainer/ItemListContainer";
 
 const Main = () => {
     return (
         <main className="contenedor-main">
-            <section>
-                
-            </section>
+            
+              <ItemListContainer/>  
+            
         </main>
     );
 };
