@@ -1,32 +1,32 @@
 import React, {useState} from 'react';
 
+export const ItemCount = ({initial, stock, onAdd}) => {
+    
+    const [count, setCount] = useState(initial);
+    
 
-const Counter = () => {
-    
-    const [count, setCount] = useState(0);
-    
-    let maxStock = 8;
-
-    const sumar = () => {              
-       count < maxStock ? setCount(count+1) : alert("Maximo Stock")
-    };
-    
     const restar = () => {
-        if (count > 0){
-            setCount(count-1)
-        }
-    };
+        setCount(count - 1);
+    }
 
+    const sumar = () => {
+        setCount(count + 1)
+    }
     
-    return (
-        <div className='contador'>
-            <button onClick={restar}>-</button>                                  
-            <p>Cantidad: {count} </p>
-            <button onClick={sumar}>+</button>
-            <button disabled={count===0}>Agregar al carrito</button>
+    
+    
+    return(
+        <div className='counter'>
+            <button disabled={count <= 1} onClick={restar}>-</button>
+            <span> {count} </span>
+            <button disabled={count >= stock} onClick={sumar}>+</button>
+            <div>
+                <button disabled={stock <= 0} onClick={()=> onAdd(count)}>Agregar Al Carrito</button>
+            </div>
+
         </div>
     )
 }
 
 
-export default Counter;
+export default ItemCount;
