@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import ItemList from '../itemList/itemList';
-import ItemCount from '../itemCount/itemCount';
-
+import ItemDetailContainer from '../ItemDetailContainer/itemDetailContainer';
 
 
 
@@ -16,8 +15,8 @@ const ItemListContainer = ({}) => {
 
 return (
     <div>
-     <ItemList items={items}/>
-     <ItemCount initial={1} stock={5} onAdd={onAdd} />
+    <ItemList items={items}/>
+     <ItemDetailContainer/>  
     </div>
 )
 

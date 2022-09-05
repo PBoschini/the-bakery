@@ -2,9 +2,9 @@ import ItemListContainer from "../ItemListContainer/ItemListContainer";
 
 const Main = () => {
     return (
-        <main className="contenedor-main">
+        <main className="main">
             
-              <ItemListContainer/>  
+            <ItemListContainer/>
             
         </main>
     );

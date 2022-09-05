@@ -5,7 +5,7 @@ const ItemList = ({}) => {
     const items = useState([]);
 
 return (
-    <div className='itemList'>        
+    <div>        
        <Item items={items}/>
     </div>
 )

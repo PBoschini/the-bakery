@@ -8,11 +8,11 @@ const Item = ({}) => {
     const [items, setItems] = useState([]);
 
     useEffect(() => {
-    const getProductos = new Promise((res, rej) => {
-        setTimeout(() => {
-            res(productos);
-        }, 2000);
-    })
+        const getProductos = new Promise((res, rej) => {
+            setTimeout(() => {
+                res(productos);
+            }, 2000);
+        })
 
 
     getProductos
@@ -28,17 +28,19 @@ const Item = ({}) => {
 }, []);
 
 return (
-    <div>        
+    <div  className='contenedor-items'>        
         {items.map((item) => {
             return (
+                
                 <div className='item'>
                     <img src={item.img} alt="" />
-                    <p>{item.title}</p>
-                    <h2>{item.descripcion}</h2>
-                    <h5>${item.price}</h5>
-                    <h3>Stock: {item.stock}</h3>
+                    <h1>{item.title}</h1>
+                    <p>{item.descripcion}</p>
+                    <h5>${item.price}</h5>                    
                     <button>Añadir</button>
+                    <button>Descripcion</button>
                 </div>
+                
             )
         })}
     </div>

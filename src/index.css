@@ -1,3 +1,5 @@
+
+
 .contenedor-header {
     background-color: lightblue;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -58,52 +60,47 @@
     font-size: 40px;
 }
 
-.contenedor-main {    
-    font-size: 20px;    
-    font-family: 'Advent Pro', sans-serif;
-    font-weight: bold;
+.contenedor-items {
     display: flex;
-    justify-content: center;    
+    justify-content: center;   
 }
 
-.contenedor-main img {
-    max-height: 150px;
-    max-width: 200px;
-    padding-top: 20px;    
-}
-
-.itemList {    
-    padding: 20px;
-    text-align: center;        
-}
 
 .item {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    max-width: 300px;
+    max-width: 300px;    
     border-radius: 20px;
     margin: 10px;
-    font-size: 25px;  
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Advent Pro', sans-serif;
+    margin: 30px;
 }
 
-.item h3 {
-    font-size: 15px;
+.item img {
+    max-height: 200px;
+    max-width: 300px;
+    min-height: 200px;
+    padding-top: 20px;
 }
 
-.item h5 {
+.item h1 {
     font-size: 30px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;   
+    
 }
 
-.item h2 {
-    font-size: 20px;    
+.item p {
+    font-weight: bold;
 }
+
 
 
 .item button {
     background-color: lightcoral;
     border-color: lightcoral;
-    
-    
+    font-size: 15px;
+    border-radius: 5px;
+    margin: 10px;    
 }
 
 .item button:hover {
@@ -126,7 +123,7 @@
 
 
 
-.contador {
+/* .contador {
     font-family: 'Advent Pro', sans-serif;
     font-weight: bold;
     font-size: 20px;
@@ -151,6 +148,47 @@
 .contador button:hover {
     background-color: lightblue;
 }
+ */
+
+.contenedor-detail {         
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 30px;    
+
+}
+
+.contenedor-detail img {    
+    max-width: 500px;    
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+}
+
+.detail {   
+    text-align: center;    
+}
+
+.detail p {
+    font-size: 15px;
+}
+
+.descripcion {
+    margin-left: 20px;
+}
+
+.descripcion h1 {
+    font-size: 50px;
+}
+
+
+
+
+
 
 
 
