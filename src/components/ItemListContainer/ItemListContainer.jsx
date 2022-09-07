@@ -1,25 +1,41 @@
-import React, { useState } from 'react';
+
+import React, { useState, useEffect } from 'react';
 import ItemList from '../itemList/itemList';
 import ItemDetailContainer from '../ItemDetailContainer/itemDetailContainer';
+import { productos } from '../../mock/productos';
 
+export const ItemListContainer = ({}) => {
+    
+    const [data, setData] = useState([]);
 
+   useEffect (() => {
+        const getData = new Promise(resolve => {
+            setTimeout(() => {
+                resolve(productos);
+            }, 2000);
+        });
 
-const ItemListContainer = ({}) => {
-   
+        getData.then(res => setData(res))
 
-    const items = useState([]);
-
-    const onAdd = (cantidad) => {
-        console.log(`Compraste ${cantidad} unidades.`)
-    }
-
-return (
-    <div>
-    <ItemList items={items}/>
-     <ItemDetailContainer/>  
-    </div>
-)
-
-};
+   }, [])
+    
+    
+    return (
+        <>        
+        <ItemList data={data}/>
+        <ItemDetailContainer/>
+        </>
+    )
+}
 
 export default ItemListContainer;
+
+
+
+
+
+
+
+
+
+

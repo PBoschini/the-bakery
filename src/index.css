@@ -65,7 +65,6 @@
     justify-content: center;   
 }
 
-
 .item {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     max-width: 300px;    
@@ -74,7 +73,7 @@
     font-size: 20px;
     text-align: center;
     font-family: 'Advent Pro', sans-serif;
-    margin: 30px;
+    margin: 30px;    
 }
 
 .item img {
@@ -108,8 +107,6 @@
 }
 
 
-
-
 .contenedor-footer {
     background-color: lightblue;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -121,34 +118,6 @@
     
 }
 
-
-
-/* .contador {
-    font-family: 'Advent Pro', sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    padding: 50px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    display: flex;
-    justify-content: center;
-    border-radius: 20px;
-    
-}
-
-.contador button {
-    min-width: 40px;
-    background-color: lightcoral;
-    border-color: lightcoral;
-    margin: 20px;
-    font-family: 'Advent Pro', sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.contador button:hover {
-    background-color: lightblue;
-}
- */
 
 .contenedor-detail {         
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;

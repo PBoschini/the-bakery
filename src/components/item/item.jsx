@@ -1,53 +1,17 @@
-import React, { useState, useEffect } from 'react';
-import {productos} from "../../mock/productos";
+import React from "react";
 
-
-
-const Item = ({}) => {
-   
-    const [items, setItems] = useState([]);
-
-    useEffect(() => {
-        const getProductos = new Promise((res, rej) => {
-            setTimeout(() => {
-                res(productos);
-            }, 2000);
-        })
-
-
-    getProductos
-        .then((data) => {
-        setItems(data);
-        })
-        .catch((error) => {
-        //console.log(error);
-        })
-        .finally(() => {
-        //console.log('Finally');
-        });
-}, []);
-
-return (
-    <div  className='contenedor-items'>        
-        {items.map((item) => {
-            return (
+const Item = ({info}) => {
+    return (
+        <div className='item'>
+            <img src={info.img} alt="" />
+                <h1>{info.title}</h1>
+                <p>{info.descripcion}</p>
+                <h5>${info.price}</h5>                    
+                <button>Añadir</button>
+                <button>Descripcion</button>
                 
-                <div className='item'>
-                    <img src={item.img} alt="" />
-                    <h1>{item.title}</h1>
-                    <p>{item.descripcion}</p>
-                    <h5>${item.price}</h5>                    
-                    <button>Añadir</button>
-                    <button>Descripcion</button>
-                </div>
-                
-            )
-        })}
-    </div>
-)
-
-};
-
-
+        </div>
+    )
+}
 
 export default Item;
