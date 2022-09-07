@@ -1,17 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ItemDetail from '../ItemDetail/itemDetail';
-
-
-const facturas = { 
-    id: 1, 
-    img: "https://res.cloudinary.com/ddaxzsv93/image/upload/v1661905112/facturas_gczkaw.jpg",
-    title: "Facturas", 
-    descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad blanditiis vero quibusdam voluptatem labore consectetur, quasi cumque ex",
-    precio: 40,
-    precioDocena: 400,
-     
-    
-};
+import { productos } from '../../mock/productos';
+import { useParams } from 'react-router-dom';
 
 
 
@@ -19,15 +9,16 @@ export const ItemDetailContainer = () => {
     
     const [data, setData] = useState({});
 
+    const {detalleId} = useParams();
+
         useEffect(() => {
             const getData = new Promise(resolve => {
                 setTimeout(() => {
-                    resolve(facturas);
-                
-                }, 2000)
+                    resolve(productos);
+                }, 1000)
             });
         
-            getData.then(res => setData(res));
+            getData.then(res => setData(res.find(productos => productos.id === parseInt(detalleId))));
         }, [] )
         
   

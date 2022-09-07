@@ -1,7 +1,8 @@
 import React from "react";
-import Item from "../item/item";
 
 export const ItemDetail = ({data}) => {
+
+    
     return (
        <div className="contenedor-detail">
         <div className="detail">
@@ -11,8 +12,7 @@ export const ItemDetail = ({data}) => {
         <div className="descripcion">
             <h1>{data.title}</h1>
             <h2>{data.descripcion}</h2>            
-            <p>Valor por unidad: $ {data.precio}</p>
-            <p>Valor por docena: $ {data.precioDocena}</p>
+            <p>Valor: $ {data.price}</p>           
         </div>  
        </div>
     )
