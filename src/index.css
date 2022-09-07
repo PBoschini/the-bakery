@@ -6,7 +6,8 @@
     display: flex;
     flex-wrap: wrap;
     border-radius: 10px;
-    
+    max-height: 250px;
+        
 }
 
 .contenedor-header h2 {
@@ -15,7 +16,7 @@
     font-family: 'Advent Pro', sans-serif;
     display: flex; 
     justify-content: center;
-    
+       
 }
 
 .contenedor-header span {
@@ -27,7 +28,7 @@
 
 
 .nav-bar {
-    width: 100%;    
+    width: 100%; 
 }
 
 
