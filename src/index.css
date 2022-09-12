@@ -7,6 +7,7 @@
     flex-wrap: wrap;
     border-radius: 10px;
     max-height: 250px;
+    align-content: center;
         
 }
 
@@ -21,14 +22,13 @@
 
 .contenedor-header span {
     display: flex;
-    align-items: center;
     font-size: 50px;
     margin: 10px;
 }
 
 
 .nav-bar {
-    width: 100%; 
+    width: 100%;
 }
 
 
@@ -62,12 +62,13 @@
     font-size: 40px;
 }
 
+
 .contenedor-items {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding-bottom: 100px;
-    padding-top: 70px;
+    padding-top: 70px;    
 }
 
 .item {
@@ -78,7 +79,8 @@
     font-size: 20px;
     text-align: center;
     font-family: 'Advent Pro', sans-serif;
-    margin: 30px;    
+    margin: 30px;
+    background-color: rgba(173, 216, 230, 0.164) 
 }
 
 .item img {
@@ -129,8 +131,7 @@
 }
 
 
-.contenedor-detail {         
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+.contenedor-detail {   
     padding: 20px;
     font-family: 'Advent Pro', sans-serif;
     font-weight: bold;
@@ -139,7 +140,8 @@
     text-align: center;
     align-items: center;
     margin-bottom: 30px;
-    min-height: 500px;   
+    min-height: 500px;
+    flex-wrap: wrap; 
 
 }
 
@@ -147,6 +149,7 @@
     max-width: 500px;    
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 20px;
+
 }
 
 .detail {   
@@ -159,6 +162,7 @@
 
 .descripcion {
     margin-left: 20px;
+    min-width: 250px;    
 }
 
 .descripcion h1 {
@@ -172,6 +176,30 @@
 }
 
 
+.counter button {
+    padding: 5px;
+    min-width: 30px;
+    margin: 10px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 5px; 
+}
+
+.counter button:hover {
+    background-color: lightcoral;
+}
+
+
+
+.cart-container {
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    min-height: 500px;
+}
 
 
 
