@@ -1,14 +1,19 @@
-
-
 .contenedor-header {
     background-color: lightblue;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    display: flex;
-    flex-wrap: wrap;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;    
     border-radius: 10px;
-    max-height: 250px;
     align-content: center;
-        
+    display: flex;
+    flex-direction: column;
+    text-shadow: black 1px .5px;
+}
+
+#shopping-cart {
+    color: white;
+    justify-content: flex-end;
+    text-decoration: underline;
+    text-shadow: black 1px 1px 1px;
+    box-sizing: border-box;
 }
 
 .contenedor-header h2 {
@@ -29,46 +34,47 @@
 
 .nav-bar {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 
 .nav-bar ul {
     font-size: 25px;
+    width: 100%;
     display: flex;
     justify-content: center;
+    align-content: center;
+   
     
 }
 
 .nav-bar li {
-    display: inline;
-    margin: 15px;
+    display: inline;    
     font-family: 'Advent Pro', sans-serif;
     font-weight: bold;
+    padding: 10px;
     
 }
 
 .nav-bar a {
     text-decoration: none;
     color: lightcoral;
-    font-weight: bold;
+    font-weight: bold;    
 }
 
 .nav-bar a:hover {
     color: black;
 }
 
-.nav-bar span {
-    color: white;
-    font-size: 40px;
-}
-
-
 .contenedor-items {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding-bottom: 100px;
-    padding-top: 70px;    
+    padding-top: 40px;    
 }
 
 .item {
