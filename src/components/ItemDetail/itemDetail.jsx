@@ -30,8 +30,8 @@ export const ItemDetail = ({data}) => {
             {
                 irCarrito
                     ? <Link to='/cart'>Ir al Carrito!</Link>
-                    : <ItemCount initial={1} stock={data.stock} onAdd={onAdd}/>
-            }        
+                    : <ItemCount initial={1} stock={data.stock} onAdd={onAdd}/>                    
+            }       
         </div>  
        </div>
     )

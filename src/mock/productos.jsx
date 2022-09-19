@@ -99,4 +99,46 @@ export const productos = [
     img: "https://res.cloudinary.com/ddaxzsv93/image/upload/v1662523351/cookies_ckmhud.webp"
 },
 
+
+{
+    id: 11,
+    title: "Licuados",
+    price: 300,
+    stock: 10,
+    descripcion: "Sabores a eleccion dentro de una gran variedad",
+    categoria: "liquidos",
+    img: "https://res.cloudinary.com/ddaxzsv93/image/upload/v1663163680/licuados_kyfhqf.jpg"
+},
+
+{
+    id: 12,
+    title: "Cafe",
+    price: 350,
+    stock: 10,
+    descripcion: "Cafe de especialidad",
+    categoria: "liquidos",
+    img: "https://res.cloudinary.com/ddaxzsv93/image/upload/v1663164049/cafe_ce5vgc.jpg"
+},
+
+{
+    id: 13,
+    title: "Cappuccino",
+    price: 500,
+    stock: 15,
+    descripcion: "Hecho con cafe de especialidad",
+    categoria: "liquidos",
+    img: "https://res.cloudinary.com/ddaxzsv93/image/upload/v1663163971/cappuccino_mk9ctg.webp"
+},
+
+{
+    id: 14,
+    title: "Milkshake",
+    price: 500,
+    stock: 10,
+    descripcion: "Sabores a eleccion dentro de una gran variedad",
+    categoria: "liquidos",
+    img: "https://res.cloudinary.com/ddaxzsv93/image/upload/v1663164077/milkshake_xp5vgw.jpg"
+}
+
+
 ];

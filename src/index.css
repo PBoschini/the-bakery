@@ -207,6 +207,51 @@
     min-height: 500px;
 }
 
+.productos-carrito {
+    font-family: 'Advent Pro', sans-serif;
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.productos-carrito button {
+    max-height: 40px;
+    border-radius: 5px;
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+.productos-carrito img {
+    max-height: 100px;
+    max-width: 200px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.carrito-total-vaciar {
+    text-align: center;
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.carrito-total-vaciar div {
+    padding: 10px;
+}
+
+.carrito-vacio {
+    text-align: center;    
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: bold;
+    padding: 20px;
+    font-size: 25px;
+    min-height: 300px;
+}
+
 
 
 
