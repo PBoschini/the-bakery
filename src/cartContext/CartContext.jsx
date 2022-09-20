@@ -9,7 +9,8 @@ export const useCartContext = () => useContext(CartContext);
 const CartProvider = ({children}) => {
     
     const [cart, setCart] = useState([]);
-    
+
+    const totalItemsCart = cart.length;    
     
     const agregarProducto = (item, cantidad) => {
         if (estaEnElCarrito(item.id)) {
@@ -44,6 +45,7 @@ const CartProvider = ({children}) => {
                 eliminarProducto,
                 totalProductos,
                 precioTotal,
+                totalItemsCart,
                 cart
             }}>
                 {children}

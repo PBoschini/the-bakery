@@ -8,12 +8,22 @@
     text-shadow: black 1px .5px;
 }
 
-#shopping-cart {
+.cart-widget{
+    display: flex;
+    justify-content: flex-end; 
     color: white;
-    justify-content: flex-end;
-    text-decoration: underline;
-    text-shadow: black 1px 1px 1px;
-    box-sizing: border-box;
+}
+
+#shopping-cart {
+    font-size: 30px;
+}
+
+#unidades-carrito {
+    font-size: 30px;
+    color: lightcoral;
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: bold;
+    padding-right: 10px;
 }
 
 .contenedor-header h2 {
