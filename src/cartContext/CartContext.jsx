@@ -34,8 +34,6 @@ const CartProvider = ({children}) => {
     const estaEnElCarrito = (id) => cart.find (producto => producto.id === id) ? true : false;
 
     const eliminarProducto = (id) => setCart(cart.filter(producto => producto.id !== id));
-
-    console.log(cart)
     
     return (
             <CartContext.Provider value={{
