@@ -3,10 +3,13 @@ import { useContext } from "react";
 import { CartContext } from "../../cartContext/CartContext";
 import { Link } from "react-router-dom";
 import ItemCart from "../itemCart/itemCart";
+import Form from "../Form/Form";
 
 const Cart = () => {
 
     const {cart, precioTotal, vaciarCarrito, eliminarProducto} = useContext(CartContext);
+
+    const total = precioTotal;
 
     
     if (cart.length === 0) {
@@ -36,7 +39,11 @@ const Cart = () => {
                     <div>
                     <Link to="/">Seguir Comprando</Link>
                     </div>
+                    <div>
+                    <Form cart={cart} total={precioTotal} vaciarCarrito={vaciarCarrito} />
+                    </div>
                     <button onClick={() => vaciarCarrito()}>Vaciar Carrito</button>
+                    
                 </div>
 
             </div>
