@@ -4,14 +4,30 @@ import { CartContext } from "../../cartContext/CartContext";
 import { Link } from "react-router-dom";
 import ItemCart from "../itemCart/itemCart";
 import Form from "../Form/Form";
+import { useState } from "react";
 
 const Cart = () => {
 
+    const [idCompra, setIdCompra] = useState('');
     const {cart, precioTotal, vaciarCarrito, eliminarProducto} = useContext(CartContext);
 
-    const total = precioTotal;
 
-    
+    const total = precioTotal();
+ 
+    const handleId = (id) => {
+        setIdCompra(id);
+    }
+
+
+    if (idCompra) {
+        return <div className="compra-finalizada">
+            <h1 >Gracias por tu compra, el id es: {idCompra}</h1>
+            <Link to="/">Volver Al Inicio</Link>
+            </div>
+         
+    }
+
+  
     if (cart.length === 0) {
         return (
             <div className="carrito-vacio">
@@ -40,7 +56,11 @@ const Cart = () => {
                     <Link to="/">Seguir Comprando</Link>
                     </div>
                     <div>
-                    <Form cart={cart} total={precioTotal} vaciarCarrito={vaciarCarrito} />
+                    <Form   cart={cart}
+                            total={total}
+                            vaciarCarrito={vaciarCarrito}
+                            handleId={handleId}
+                    />
                     </div>
                     <button onClick={() => vaciarCarrito()}>Vaciar Carrito</button>
                     

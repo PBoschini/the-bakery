@@ -11,11 +11,12 @@ import { dataBase } from '../../firebaseConfig';
 const Form = ({ cart, total, vaciarCarrito, handleId }) => {
     const [nombre, setNombre] = useState('');
     const [mail, setMail] = useState('');
+    const [telefono, setTelefono] = useState('');
 
     const handleSubmit = (event) => {
         event.preventDefault();
         const order = {
-            buyer: { nombre: nombre, mail: mail },
+            buyer: { nombre: nombre, mail: mail, telefono: telefono },
             items: cart,
             total: total,
             date: serverTimestamp(),
@@ -23,16 +24,11 @@ const Form = ({ cart, total, vaciarCarrito, handleId }) => {
 
         const ordersCollection = collection(dataBase, 'orders');
 
-        addDoc(ordersCollection, order).then((res) => {            
+        addDoc(ordersCollection, order).then((res) => {
             handleId(res.id);
             vaciarCarrito();
-            updateprod();
+                          
         });
-    };
-
-    const updateprod = () => {
-        const orderDoc = doc(dataBase, 'orders', 'A29yVRkpjasoaRfEo3G5');
-        updateDoc(orderDoc, { total: 100 });
     };
 
     const handleChangeNombre = (event) => {
@@ -43,8 +39,12 @@ const Form = ({ cart, total, vaciarCarrito, handleId }) => {
         setMail(event.target.value);
     };
 
+    const handleChangeTelefono = (event) => {
+        setTelefono(event.target.value);
+    };
+
     return (
-        <div style={{ marginTop: '20px' }}>
+        <div className='formulario'>
             <form action="" onSubmit={handleSubmit}>
                 <input
                     type="text"
@@ -60,7 +60,14 @@ const Form = ({ cart, total, vaciarCarrito, handleId }) => {
                     value={mail}
                     onChange={handleChangeMail}
                 />
-                <button>Enviar</button>
+                <input
+                    type="text"
+                    placeholder="Telefono..."
+                    name="telefono"
+                    value={telefono}
+                    onChange={handleChangeTelefono}
+                />
+                <button>Finalizar Compra</button>
             </form>
         </div>
     );

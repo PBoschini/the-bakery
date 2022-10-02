@@ -262,6 +262,26 @@
     min-height: 300px;
 }
 
+.compra-finalizada {
+    text-align: center;    
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: bold;
+}
+
+.formulario input {
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: bold;
+    font-size: 15px;    
+}
+
+.formulario button {
+    background-color: lightblue;
+}
+
+.formulario button:hover {
+    background-color: lightcoral;
+}
+
 
 
 
