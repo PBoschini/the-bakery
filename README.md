@@ -1,8 +1,7 @@
 # Ecommerce The Bakery
 <!-- ` -->
 ![](public/Logo.jpg)
-## Para iniciar Proyecto
-`npm start`
+
 
 ## Librerias Utilizadas
 -[React Router Dom](https://v5.reactrouter.com/web/guides/quick-start)
