@@ -8,8 +8,8 @@ const Item = ({info}) => {
             <img src={info.img} alt="" />
                 <h1>{info.title}</h1>
                 <p>{info.descripcion}</p>
-                <h5>${info.price}</h5>                    
-                <button>Añadir</button>
+                <h5>${info.price}</h5>                
+                
                 <Link to={`/detalle/${info.id}`} className="boton-desripcion">Descripción</Link>
                 
         </div>
